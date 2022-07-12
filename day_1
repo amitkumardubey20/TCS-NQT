@@ -1,0 +1,81 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        
+         int a1=sc.nextInt();
+         int b1=sc.nextInt();
+         int c1=sc.nextInt();
+         
+        System.out.println(" oxygen value of trainee 1 after round1 :"+a1);
+        System.out.println(" oxygen value of trainee 2 after round1 :"+b1);
+        System.out.println(" oxygen value of trainee 3 after round1 :"+c1);
+        
+        
+        int a2=sc.nextInt();
+        int b2=sc.nextInt();
+        int c2=sc.nextInt();
+        
+        System.out.println(" oxygen value of trainee 1 after round2 :"+a2);
+        System.out.println(" oxygen value of trainee 2 after round2 :"+b2);
+        System.out.println(" oxygen value of trainee 3 after round2 :"+c2);
+        
+        
+        int a3=sc.nextInt();
+        int b3=sc.nextInt();
+        int c3=sc.nextInt();
+        
+        System.out.println(" oxygen value of trainee 1 after round3 :"+a3);
+        System.out.println(" oxygen value of trainee 2 after round3 :"+b3);
+        System.out.println(" oxygen value of trainee 3 after round3 :"+c3);
+        
+        int avg1=0,avg2=0,avg3=0;
+        
+        if(a1>=1 && a1<=100 && b1>=1 && b1<=100 && c1>=1 && c1<=100)
+        {
+            
+                if(a2>=1 && a2<=100 && b2>=1 && b2<=100 && c2>=1 && c2<=100)
+                {
+                    
+                    if(a3>=1 && a3<=100 && b3>=1 && b3<=100 && c3>=1 && c3<=100)
+                    
+                    {
+                        
+         avg1=(a1+a2+a3)/3;
+         avg2=(b1+b2+b3)/3;
+         avg3=(c1+c2+c3)/3;
+        
+        if(avg1<70)
+           System.out.println("unfit");
+           
+        if(avg2<70)
+           System.out.println("unfit");
+           
+        if(avg3<70)
+           System.out.println("unfit");
+                    
+                        
+                    }
+        
+        int max= (avg1>avg2) ?(avg1>avg3?avg1:avg3):(avg2>avg3?avg2:avg3);
+        System.out.println("Maximum oxygen level is :"+max);
+        
+        if(avg1==max)
+        System.out.println("trainee 1 is maximum");
+        
+         if(avg2==max)
+        System.out.println("trainee 2 is maximum");
+        
+         if(avg3==max)
+        System.out.println("trainee 3 is maximum");
+                }
+        }
+}
+}
